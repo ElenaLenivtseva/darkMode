@@ -1,13 +1,12 @@
-import React from "react";
 import "./Toggle.css";
 
-const Toggle = ({ handleChange, isChecked }) => {
+export const Toggle = ({ handleChange, isChecked }) => {
   return (
     <div className="toggle-container">
       <input
         type="checkbox"
         id="check"
-        className="toogle"
+        className="toggle"
         onChange={handleChange}
         checked={isChecked}
       />
@@ -15,5 +14,3 @@ const Toggle = ({ handleChange, isChecked }) => {
     </div>
   );
 };
-
-export default Toggle;
